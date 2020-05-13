@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memainkan warna</title>
+
+    <style lang="en">
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .ubah-warna {
+            background-color: lightblue;
+        }
+
+        .kotak {
+            width: 25px;
+            height: 25px;
+            margin: 10px auto;
+        }
+
+        #merah {
+            background-color: red;
+        }
+
+        #hijau {
+            background-color: green;
+        }
+
+        #biru {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Latihan Memainkan Warna</h1>
+
+    <button type="button" id="btn_ubah">Ubah Warna</button>
+    <br>
+
+    <div id="merah" class="kotak"></div>
+    <input type="range" name="r_merah" min="0" max="255">
+    
+    <div id="hijau" class="kotak"></div>
+    <input type="range" name="r_hijau" min="0" max="255">
+
+    <div id="biru" class="kotak"></div>
+    <input type="range" name="r_biru" min="0" max="255">
+    
+    <script src="script.js"></script>
+</body>
+</html>
